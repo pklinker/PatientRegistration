@@ -182,7 +182,13 @@ Public Class MainForm
     ''' <remarks></remarks>
     Private Sub LoadLookupData(ByRef theControl As ComboBox, ByVal namefield As String, ByVal idfield As String, ByVal tablename As String)
 
-        Dim oCmd As New OleDbCommand("SELECT " + idfield + ", " + namefield + " from " + tablename + " ORDER BY " + namefield, odb)
+        'Dim oCmd As New OleDbCommand("SELECT " + idfield + ", " + namefield + " from " + tablename + " ORDER BY " + namefield, odb)
+        '''       Dim oCmd As New OleDbCommand("SELECT ?,? from ? ORDER BY ?", odb)
+        '''       oCmd.Parameters.AddWithValue("@idfied", idfield)
+        '''       oCmd.Parameters.AddWithValue("@namefield", namefield)
+        '''       oCmd.Parameters.AddWithValue("@tablename", tablename)
+        '''        oCmd.Parameters.AddWithValue("@namefield", namefield)
+
         Dim statusDataTable As DataTable
         statusDataTable = New DataTable
         statusDataTable.Columns.Add(namefield, GetType(System.String))
@@ -194,6 +200,8 @@ Public Class MainForm
             odb.Open()
 
             sqlDataRdr = oCmd.ExecuteReader()
+
+
             While sqlDataRdr.Read()
                 drNewRow = statusDataTable.NewRow()
                 drNewRow(idfield) = sqlDataRdr.GetValue(0)
@@ -203,7 +211,7 @@ Public Class MainForm
         Catch ex As OleDbException
             MessageBox.Show("Error retrieving records from the database.", "Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Error)
-
+            Return
         Finally
             odb.Close()
 
