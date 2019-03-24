@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Patient Registration", "Patient Registration\Patient Registration.vbproj", "{EDCF627D-F750-4C60-A080-B2AACF931EE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Debug|x64.ActiveCfg = Debug|x64
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Debug|x64.Build.0 = Debug|x64
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Debug|x86.ActiveCfg = Debug|x86
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Debug|x86.Build.0 = Debug|x86
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Release|x64.ActiveCfg = Release|x64
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Release|x64.Build.0 = Release|x64
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Release|x86.ActiveCfg = Release|x86
+		{EDCF627D-F750-4C60-A080-B2AACF931EE8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F28DF26C-2694-4ADA-93A0-98DDE2088BA4}
+	EndGlobalSection
+EndGlobal
